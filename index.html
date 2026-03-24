@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1a2530">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Christopher's Life">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="A deeply personal daily health and life management system">
+  <title>Christopher's Life</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/icon.svg">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Inline splash so it shows before JS loads -->
+    <div id="splash" style="position:fixed;inset:0;background:#0c1419;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1000">
+      <svg width="80" height="80" viewBox="0 0 512 512" style="margin-bottom:24px">
+        <rect width="512" height="512" rx="115" fill="#0c1419"/>
+        <rect x="18" y="109" width="294" height="294" fill="none" stroke="#2dd4bf" stroke-width="9" opacity="0.92"/>
+        <rect x="312" y="109" width="182" height="182" fill="none" stroke="#2dd4bf" stroke-width="7.5" opacity="0.78"/>
+        <rect x="382" y="291" width="112" height="112" fill="none" stroke="#2dd4bf" stroke-width="6" opacity="0.64"/>
+        <rect x="312" y="333" width="70" height="70" fill="none" stroke="#2dd4bf" stroke-width="5" opacity="0.52"/>
+        <rect x="312" y="291" width="42" height="42" fill="none" stroke="#2dd4bf" stroke-width="4" opacity="0.42"/>
+        <rect x="354" y="291" width="28" height="28" fill="none" stroke="#2dd4bf" stroke-width="3" opacity="0.32"/>
+        <rect x="354" y="319" width="14" height="14" fill="none" stroke="#2dd4bf" stroke-width="2.5" opacity="0.22"/>
+        <rect x="368" y="319" width="14" height="14" fill="none" stroke="#2dd4bf" stroke-width="2.5" opacity="0.14"/>
+        <text x="165" y="278" text-anchor="middle" dominant-baseline="middle"
+          font-family="'Playfair Display','Georgia','Times New Roman',serif"
+          font-size="200" font-weight="400" fill="#2dd4bf" opacity="0.88">C</text>
+      </svg>
+      <div style="font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:700;color:#2dd4bf;letter-spacing:1px;margin-bottom:6px">
+        Christopher's Life
+      </div>
+      <div style="font-size:12px;color:#64748b;letter-spacing:3px;text-transform:uppercase;font-family:monospace">
+        loading your day
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/audio.js"></script>
+  <script src="./js/notifications.js"></script>
+  <script src="./js/ai.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
